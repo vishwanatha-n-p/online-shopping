@@ -1,8 +1,8 @@
 package com.online.shopping.mapper;
 
 import com.online.shopping.entity.ProductOrder;
-import com.online.shopping.requestDto.ProductOrderRequestDto;
-import com.online.shopping.requestDto.ProductOrderRequestDto2;
+import com.online.shopping.requestDto.OrderFromProductRequestDto;
+import com.online.shopping.requestDto.OrderFromPriceDetailRequestDto;
 import com.online.shopping.responseDto.ProductOrderResponseDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,11 +14,11 @@ public class ProductOrderMapper {
     @Autowired
     private ModelMapper mapper;
 
-    public ProductOrder convertDtoToEntity(ProductOrderRequestDto orderDetailRequestDto) {
+    public ProductOrder convertDtoToEntity(OrderFromProductRequestDto orderDetailRequestDto) {
         return new ProductOrder(orderDetailRequestDto.getQuantity());
     }
 
-    public ProductOrder convertDtoToEntity(ProductOrderRequestDto2 orderDetailRequestDto) {
+    public ProductOrder convertDtoToEntity(OrderFromPriceDetailRequestDto orderDetailRequestDto) {
         return new ProductOrder(orderDetailRequestDto.getQuantity());
     }
 

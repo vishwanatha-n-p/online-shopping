@@ -1,7 +1,7 @@
 package com.online.shopping.controller;
 
-import com.online.shopping.requestDto.ProductOrderRequestDto;
-import com.online.shopping.requestDto.ProductOrderRequestDto2;
+import com.online.shopping.requestDto.OrderFromProductRequestDto;
+import com.online.shopping.requestDto.OrderFromPriceDetailRequestDto;
 import com.online.shopping.responseDto.ProductOrderResponseDto;
 import com.online.shopping.services.ProductOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,13 +39,13 @@ public class ProductOrderController {
 
     @PreAuthorize("hasRole('ROLE_Customer')")
     @PostMapping
-    public ProductOrderResponseDto addProductOrder(@Valid @RequestBody ProductOrderRequestDto productOrderRequestDto, @RequestHeader String authorization) {
+    public ProductOrderResponseDto addProductOrder(@Valid @RequestBody OrderFromProductRequestDto productOrderRequestDto, @RequestHeader String authorization) {
         return productOrderService.addProductOrder(productOrderRequestDto, authorization);
     }
 
     @PreAuthorize("hasRole('ROLE_Customer')")
     @PostMapping("/priceDetails")
-    public ProductOrderResponseDto addProductFromPriceDetail(@Valid @RequestBody ProductOrderRequestDto2 productOrderRequestDto, @RequestHeader String authorization) {
+    public ProductOrderResponseDto addProductFromPriceDetail(@Valid @RequestBody OrderFromPriceDetailRequestDto productOrderRequestDto, @RequestHeader String authorization) {
         return productOrderService.addProductFromPriceDetail(productOrderRequestDto, authorization);
     }
 

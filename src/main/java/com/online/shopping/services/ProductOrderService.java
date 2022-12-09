@@ -12,15 +12,14 @@ import com.online.shopping.repository.PriceDetailRepository;
 import com.online.shopping.repository.ProductOrderRepository;
 import com.online.shopping.repository.ProductRepository;
 import com.online.shopping.repository.UserRepository;
-import com.online.shopping.requestDto.ProductOrderRequestDto;
-import com.online.shopping.requestDto.ProductOrderRequestDto2;
+import com.online.shopping.requestDto.OrderFromProductRequestDto;
+import com.online.shopping.requestDto.OrderFromPriceDetailRequestDto;
 import com.online.shopping.responseDto.ProductOrderResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -52,7 +51,7 @@ public class ProductOrderService {
         return productOrderRepository.findAllByUserId(validate.getUserId(authorization)).stream().map(orderDetail -> orderMapper.convertEntityToDto(orderDetail)).collect(Collectors.toList());
     }
 
-    public ProductOrderResponseDto addProductOrder(ProductOrderRequestDto productOrderRequest, String authorization) {
+    public ProductOrderResponseDto addProductOrder(OrderFromProductRequestDto productOrderRequest, String authorization) {
         ProductOrder productOrderResponse = productOrderRepository.findByProductIdAndUserId(productOrderRequest.getProductId(), validate.getUserId(authorization)).orElse(null);
         if (Objects.isNull(productOrderResponse)) {
             Product product = productRepository.findById(productOrderRequest.getProductId()).orElse(null);
@@ -68,7 +67,7 @@ public class ProductOrderService {
         }
     }
 
-    public ProductOrderResponseDto addProductFromPriceDetail(ProductOrderRequestDto2 productOrderRequest, String authorization) {
+    public ProductOrderResponseDto addProductFromPriceDetail(OrderFromPriceDetailRequestDto productOrderRequest, String authorization) {
         PriceDetail priceDetail = priceDetailRepository.findById(productOrderRequest.getPriceDetailId()).orElse(null);
         if (Objects.nonNull(priceDetail)) {
             int productId = priceDetail.getProduct().getId();

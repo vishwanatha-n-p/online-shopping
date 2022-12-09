@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
-import org.springframework.beans.factory.annotation.Value;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -15,13 +14,13 @@ import javax.validation.constraints.Positive;
 @Getter
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProductOrderRequestDto {
+public class OrderFromPriceDetailRequestDto {
 
     int id;
 
-    @NotNull(message = "Enter product id")
-    @Positive(message = "Enter valid product id")
-    Integer productId;
+    @NotNull(message = "Enter price detail id")
+    @Positive(message = "Enter positive price detail id")
+    Integer priceDetailId;
 
     @Min(value = 1, message = "Enter quantity greater than or equal to 1")
     int quantity;
