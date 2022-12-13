@@ -8,9 +8,9 @@ import com.online.shopping.exception.ProductSubcategoryNotFoundException;
 import com.online.shopping.exception.ProductTypeNotFoundException;
 import com.online.shopping.mapper.ProductTypeMapper;
 import com.online.shopping.repository.ProductTypeRepository;
-import com.online.shopping.repository.SubcategoryRepository;
-import com.online.shopping.requestDto.ProductTypeRequestDto;
-import com.online.shopping.responseDto.ProductTypeResponseDto;
+import com.online.shopping.repository.ProductSubcategoryRepository;
+import com.online.shopping.requestdto.ProductTypeRequestDto;
+import com.online.shopping.responsedto.ProductTypeResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +28,7 @@ public class ProductTypeService {
     private ProductTypeMapper productTypeMapper;
 
     @Autowired
-    private SubcategoryRepository subcategoryRepository;
+    private ProductSubcategoryRepository subcategoryRepository;
 
     public List<ProductTypeResponseDto> getAllProductTypes() {
         return productTypeRepository.findAll().stream().map(productTypes -> productTypeMapper.convertEntityToDto(productTypes)).collect(Collectors.toList());

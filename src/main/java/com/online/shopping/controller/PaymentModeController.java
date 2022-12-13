@@ -1,8 +1,8 @@
 package com.online.shopping.controller;
 
 import com.online.shopping.entity.PaymentMode;
-import com.online.shopping.requestDto.PaymentModeRequestDto;
-import com.online.shopping.responseDto.PaymentModeResponseDto;
+import com.online.shopping.requestdto.PaymentModeRequestDto;
+import com.online.shopping.responsedto.PaymentModeResponseDto;
 import com.online.shopping.services.PaymentModeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;

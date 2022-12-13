@@ -15,8 +15,8 @@ import com.online.shopping.repository.FinalOrderRepository;
 import com.online.shopping.repository.PaymentModeRepository;
 import com.online.shopping.repository.PaymentRepository;
 import com.online.shopping.repository.ProductOrderRepository;
-import com.online.shopping.requestDto.PaymentRequestDto;
-import com.online.shopping.responseDto.PaymentResponseDto;
+import com.online.shopping.requestdto.PaymentRequestDto;
+import com.online.shopping.responsedto.PaymentResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

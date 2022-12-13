@@ -1,10 +1,9 @@
 package com.online.shopping.controller;
 
-import com.online.shopping.requestDto.ProductTypeRequestDto;
-import com.online.shopping.responseDto.ProductTypeResponseDto;
+import com.online.shopping.requestdto.ProductTypeRequestDto;
+import com.online.shopping.responsedto.ProductTypeResponseDto;
 import com.online.shopping.services.ProductTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

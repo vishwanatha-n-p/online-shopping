@@ -1,8 +1,8 @@
 package com.online.shopping.mapper;
 
 import com.online.shopping.entity.Role;
-import com.online.shopping.requestDto.RoleRequestDto;
-import com.online.shopping.responseDto.RoleResponseDto;
+import com.online.shopping.requestdto.RoleRequestDto;
+import com.online.shopping.responsedto.RoleResponseDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -4,8 +4,8 @@ import com.online.shopping.entity.PaymentMode;
 import com.online.shopping.exception.GeneralException;
 import com.online.shopping.mapper.PaymentModeMapper;
 import com.online.shopping.repository.PaymentModeRepository;
-import com.online.shopping.requestDto.PaymentModeRequestDto;
-import com.online.shopping.responseDto.PaymentModeResponseDto;
+import com.online.shopping.requestdto.PaymentModeRequestDto;
+import com.online.shopping.responsedto.PaymentModeResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

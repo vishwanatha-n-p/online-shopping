@@ -5,8 +5,8 @@ import com.online.shopping.entity.Currency;
 import com.online.shopping.exception.CurrencyNotFoundException;
 import com.online.shopping.mapper.CurrencyMapper;
 import com.online.shopping.repository.CurrencyRepository;
-import com.online.shopping.requestDto.CurrencyRequestDto;
-import com.online.shopping.responseDto.CurrencyResponseDto;
+import com.online.shopping.requestdto.CurrencyRequestDto;
+import com.online.shopping.responsedto.CurrencyResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

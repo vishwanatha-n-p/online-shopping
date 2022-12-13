@@ -36,7 +36,8 @@ dependencies {
 	implementation 'com.github.igoricelic:dtomapper:1.1.0'
 	implementation 'org.flywaydb:flyway-core:9.3.0'
 	implementation 'org.flywaydb:flyway-mysql:9.3.0'
-	implementation 'org.springframework.boot:spring-boot-starter-mail:2.7.3'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 }
 

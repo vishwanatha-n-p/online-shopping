@@ -1,7 +1,7 @@
 package com.online.shopping.controller;
 
-import com.online.shopping.requestDto.WishListRequestDto;
-import com.online.shopping.responseDto.WishListResponseDto;
+import com.online.shopping.requestdto.WishListRequestDto;
+import com.online.shopping.responsedto.WishListResponseDto;
 import com.online.shopping.services.WishListServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;

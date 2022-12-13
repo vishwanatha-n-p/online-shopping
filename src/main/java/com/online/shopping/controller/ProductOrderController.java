@@ -1,8 +1,8 @@
 package com.online.shopping.controller;
 
-import com.online.shopping.requestDto.OrderFromProductRequestDto;
-import com.online.shopping.requestDto.OrderFromPriceDetailRequestDto;
-import com.online.shopping.responseDto.ProductOrderResponseDto;
+import com.online.shopping.requestdto.OrderFromProductRequestDto;
+import com.online.shopping.requestdto.OrderFromPriceDetailRequestDto;
+import com.online.shopping.responsedto.ProductOrderResponseDto;
 import com.online.shopping.services.ProductOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;

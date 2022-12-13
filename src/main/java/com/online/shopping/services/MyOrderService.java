@@ -15,8 +15,8 @@ import com.online.shopping.repository.MyOrderRepository;
 import com.online.shopping.repository.PriceDetailRepository;
 import com.online.shopping.repository.ProductRepository;
 import com.online.shopping.repository.UserRepository;
-import com.online.shopping.responseDto.MyOrderResponseDto;
-import com.online.shopping.responseDto.PriceDetailResponseDto;
+import com.online.shopping.responsedto.MyOrderResponseDto;
+import com.online.shopping.responsedto.PriceDetailResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

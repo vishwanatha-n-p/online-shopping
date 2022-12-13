@@ -12,9 +12,9 @@ import com.online.shopping.repository.PriceDetailRepository;
 import com.online.shopping.repository.ProductOrderRepository;
 import com.online.shopping.repository.ProductRepository;
 import com.online.shopping.repository.UserRepository;
-import com.online.shopping.requestDto.OrderFromProductRequestDto;
-import com.online.shopping.requestDto.OrderFromPriceDetailRequestDto;
-import com.online.shopping.responseDto.ProductOrderResponseDto;
+import com.online.shopping.requestdto.OrderFromProductRequestDto;
+import com.online.shopping.requestdto.OrderFromPriceDetailRequestDto;
+import com.online.shopping.responsedto.ProductOrderResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

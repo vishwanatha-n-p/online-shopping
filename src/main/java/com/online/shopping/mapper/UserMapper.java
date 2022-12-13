@@ -1,8 +1,8 @@
 package com.online.shopping.mapper;
 
 import com.online.shopping.entity.User;
-import com.online.shopping.requestDto.UserRequestDto;
-import com.online.shopping.responseDto.UserResponseDto;
+import com.online.shopping.requestdto.UserRequestDto;
+import com.online.shopping.responsedto.UserResponseDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

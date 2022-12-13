@@ -1,6 +1,5 @@
 package com.online.shopping.services;
 
-import com.online.shopping.entity.FinalOrder;
 import com.online.shopping.repository.FinalOrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-import java.util.List;
 
 @Service
 public class EmailService {

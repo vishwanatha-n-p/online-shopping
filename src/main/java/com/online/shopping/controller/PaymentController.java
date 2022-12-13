@@ -1,8 +1,8 @@
 package com.online.shopping.controller;
 
 import com.online.shopping.entity.Payment;
-import com.online.shopping.requestDto.PaymentRequestDto;
-import com.online.shopping.responseDto.PaymentResponseDto;
+import com.online.shopping.requestdto.PaymentRequestDto;
+import com.online.shopping.responsedto.PaymentResponseDto;
 import com.online.shopping.services.EmailService;
 import com.online.shopping.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.mail.MessagingException;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;

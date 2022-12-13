@@ -1,24 +1,19 @@
 package com.online.shopping.services;
 
 import com.online.shopping.constants.ErrorConstants;
-import com.online.shopping.entity.ProductCategory;
-import com.online.shopping.entity.ProductSubcategory;
 import com.online.shopping.entity.Role;
 import com.online.shopping.entity.User;
-import com.online.shopping.exception.ProductNotFoundException;
-import com.online.shopping.exception.ProductSubcategoryNotFoundException;
 import com.online.shopping.exception.RoleNotFoundException;
 import com.online.shopping.exception.UserNotFoundException;
 import com.online.shopping.mapper.UserMapper;
 import com.online.shopping.repository.RoleRepository;
 import com.online.shopping.repository.UserRepository;
-import com.online.shopping.requestDto.UserRequestDto;
-import com.online.shopping.responseDto.UserResponseDto;
+import com.online.shopping.requestdto.UserRequestDto;
+import com.online.shopping.responsedto.UserResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

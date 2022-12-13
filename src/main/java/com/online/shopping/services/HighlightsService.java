@@ -5,8 +5,8 @@ import com.online.shopping.entity.Highlights;
 import com.online.shopping.exception.HighlightsNotFoundException;
 import com.online.shopping.mapper.HighlightsMapper;
 import com.online.shopping.repository.HighlightsRepository;
-import com.online.shopping.requestDto.HighlightsRequestDto;
-import com.online.shopping.responseDto.HighlightsResponseDto;
+import com.online.shopping.requestdto.HighlightsRequestDto;
+import com.online.shopping.responsedto.HighlightsResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

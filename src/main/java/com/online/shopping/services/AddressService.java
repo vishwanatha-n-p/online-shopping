@@ -8,8 +8,8 @@ import com.online.shopping.general.Validate;
 import com.online.shopping.mapper.AddressMapper;
 import com.online.shopping.repository.AddressRepository;
 import com.online.shopping.repository.CustomerDetailRepository;
-import com.online.shopping.requestDto.AddressRequestDto;
-import com.online.shopping.responseDto.AddressResponseDto;
+import com.online.shopping.requestdto.AddressRequestDto;
+import com.online.shopping.responsedto.AddressResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

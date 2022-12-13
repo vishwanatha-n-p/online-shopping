@@ -14,10 +14,8 @@ jwt:
         hbm2ddl:
           auto: update
         open-in-view: false
-#        use-new-id-generator-mappings: true
 
 # JDBC properties
-
 spring:
   datasource:
     drive-class-name: com.mysql.cj.jdbc.Driver
@@ -36,5 +34,9 @@ flyway:
   ignoreIgnoredMigrations: true
   repair: true
 
-#log level properties
+# log level properties
 debug: true
+
+
+
+

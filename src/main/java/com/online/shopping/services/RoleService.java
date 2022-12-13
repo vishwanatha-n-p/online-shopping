@@ -4,8 +4,8 @@ import com.online.shopping.constants.ErrorConstants;
 import com.online.shopping.exception.GeneralException;
 import com.online.shopping.mapper.RoleMapper;
 import com.online.shopping.repository.RoleRepository;
-import com.online.shopping.requestDto.RoleRequestDto;
-import com.online.shopping.responseDto.RoleResponseDto;
+import com.online.shopping.requestdto.RoleRequestDto;
+import com.online.shopping.responsedto.RoleResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

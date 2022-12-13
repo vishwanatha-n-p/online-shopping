@@ -9,8 +9,8 @@ import com.online.shopping.general.Validate;
 import com.online.shopping.mapper.CustomerDetailMapper;
 import com.online.shopping.repository.CustomerDetailRepository;
 import com.online.shopping.repository.UserRepository;
-import com.online.shopping.requestDto.CustomerDetailRequestDto;
-import com.online.shopping.responseDto.CustomerDetailResponseDto;
+import com.online.shopping.requestdto.CustomerDetailRequestDto;
+import com.online.shopping.responsedto.CustomerDetailResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

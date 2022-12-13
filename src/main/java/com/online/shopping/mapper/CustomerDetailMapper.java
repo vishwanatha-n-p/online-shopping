@@ -1,8 +1,8 @@
 package com.online.shopping.mapper;
 
 import com.online.shopping.entity.CustomerDetail;
-import com.online.shopping.requestDto.CustomerDetailRequestDto;
-import com.online.shopping.responseDto.CustomerDetailResponseDto;
+import com.online.shopping.requestdto.CustomerDetailRequestDto;
+import com.online.shopping.responsedto.CustomerDetailResponseDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

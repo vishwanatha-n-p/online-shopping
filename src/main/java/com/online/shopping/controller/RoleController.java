@@ -1,7 +1,7 @@
 package com.online.shopping.controller;
 
-import com.online.shopping.requestDto.RoleRequestDto;
-import com.online.shopping.responseDto.RoleResponseDto;
+import com.online.shopping.requestdto.RoleRequestDto;
+import com.online.shopping.responsedto.RoleResponseDto;
 import com.online.shopping.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;

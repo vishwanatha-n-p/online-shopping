@@ -10,8 +10,8 @@ import com.online.shopping.mapper.PriceDetailMapper;
 import com.online.shopping.repository.CurrencyRepository;
 import com.online.shopping.repository.PriceDetailRepository;
 import com.online.shopping.repository.ProductRepository;
-import com.online.shopping.requestDto.PriceDetailRequestDto;
-import com.online.shopping.responseDto.PriceDetailResponseDto;
+import com.online.shopping.requestdto.PriceDetailRequestDto;
+import com.online.shopping.responsedto.PriceDetailResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

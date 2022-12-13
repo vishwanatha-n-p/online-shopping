@@ -1,15 +1,14 @@
 package com.online.shopping.services;
 
 import com.online.shopping.constants.ErrorConstants;
-import com.online.shopping.entity.Product;
 import com.online.shopping.entity.Seller;
 import com.online.shopping.exception.SellerNotFoundException;
 import com.online.shopping.mapper.SellerMapper;
 import com.online.shopping.repository.ProductRepository;
 import com.online.shopping.repository.RoleRepository;
 import com.online.shopping.repository.SellerRepository;
-import com.online.shopping.requestDto.SellerRequestDto;
-import com.online.shopping.responseDto.SellerResponseDto;
+import com.online.shopping.requestdto.SellerRequestDto;
+import com.online.shopping.responsedto.SellerResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

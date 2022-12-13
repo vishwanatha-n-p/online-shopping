@@ -10,7 +10,7 @@ import com.online.shopping.general.RandomNumber;
 import com.online.shopping.general.Validate;
 import com.online.shopping.mapper.FinalOrderMapper;
 import com.online.shopping.repository.FinalOrderRepository;
-import com.online.shopping.responseDto.FinalOrderResponseDto;
+import com.online.shopping.responsedto.FinalOrderResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

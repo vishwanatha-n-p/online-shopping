@@ -3,7 +3,7 @@ package com.online.shopping.mapper;
 import com.online.shopping.entity.FinalOrder;
 import com.online.shopping.entity.MyOrders;
 import com.online.shopping.entity.Product;
-import com.online.shopping.responseDto.MyOrderResponseDto;
+import com.online.shopping.responsedto.MyOrderResponseDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,7 +1,7 @@
 package com.online.shopping.controller;
 
-import com.online.shopping.requestDto.HighlightsRequestDto;
-import com.online.shopping.responseDto.HighlightsResponseDto;
+import com.online.shopping.requestdto.HighlightsRequestDto;
+import com.online.shopping.responsedto.HighlightsResponseDto;
 import com.online.shopping.services.HighlightsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
