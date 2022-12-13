@@ -34,7 +34,6 @@ public class RoleController {
         return roleService.getSingleRole(roleId);
     }
 
-    @PreAuthorize("hasRole('ROLE_Manager')")
     @PostMapping
     public RoleResponseDto addRole(@Valid @RequestBody RoleRequestDto roleRequestDto) {
         return roleService.addRole(roleRequestDto);

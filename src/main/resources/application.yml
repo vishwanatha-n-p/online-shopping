@@ -32,7 +32,6 @@ flyway:
   encoding: UTF8MB4
   outOfOrder: true
   ignoreIgnoredMigrations: true
-  repair: true
 
 # log level properties
 debug: true
